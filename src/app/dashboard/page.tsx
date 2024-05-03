@@ -9,7 +9,29 @@ export default function Home() {
         <NavBar></NavBar>
       </div>
       <div className="flex flex-col border rounded-sm mt-1 md:h-[650px] items-center pt-10">
-        <a href="/">VOLTAR</a>
+        <h1 className="md:mx-52 text-center mt-5">Este e o campo de pesquisa personalizada, onde pode-se colocar Notificações para qualquer termo ou frase desejada.</h1>
+          <form className="flex flex-col gap-2 my-5">
+          <input
+            name="termo"
+            type="text"
+            id="termo"
+            required
+            placeholder="Termo a Ser Pesquisado"
+            className="w-42 border rounded-sm p-2"
+          />
+          <input
+            name="Email"
+            type="text"
+            id="email"
+            required
+            placeholder="Email de Notificação"
+            className="w-42 border rounded-sm p-2"
+          />
+          <button className="border p-1 dark:text-black bg-[#FFBD59] hover:text-white hover:bg-[#0E7201]">
+            <span>Enviar dados</span>
+          </button>
+        </form>
+        <a href="/" className="border p-1 dark:text-black bg-[#242D4C] text-white dark:bg-white hover:text-white hover:bg-[#0E7201]">VOLTAR</a>
       </div>
     </div>
   );

@@ -18,7 +18,7 @@ export default function Home() {
               Fique Tranquilo e Sempre Receba Notificações no E-Mail sobre
               Citações de seu CPF ou CNPJ no Diário Oficial da União
             </h3>
-          </div> 
+          </div>
           <div className="w-fit lg:w-[450px]">
             <AspectRatio ratio={16 / 12}>
               <Image
@@ -30,7 +30,7 @@ export default function Home() {
             </AspectRatio>
           </div>
         </div>
-          <form className="flex flex-col gap-2 my-5">
+        <form className="flex flex-col gap-2 my-5">
           <input
           name="Nome"
           type="text"
@@ -55,6 +55,7 @@ export default function Home() {
           placeholder="Email"
           className="w-42 border rounded-sm p-2"
           />
+
           <button className="border p-1 dark:text-black bg-[#FFBD59] hover:text-white hover:bg-[#0E7201]">
             <span>Enviar dados</span>
           </button>
