@@ -22,6 +22,7 @@ export default function NavBar() {
         </AspectRatio>
       </div>
       <div className="flex items-center gap-5  dark:text-white p-1">
+      <a href="/dashboard">LOGIN</a>
       <a>SOBRE</a>
       <ModeToggle></ModeToggle>
       </div>
