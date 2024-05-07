@@ -5,10 +5,10 @@ import { AspectRatio } from "@radix-ui/react-aspect-ratio";
 export default function Home() {
   return (
     <div className="xl:mx-96">
-      <div className="border mt-1 rounded-sm">
+      <div className="border dark:border-gray-500 mt-1 rounded-sm">
         <NavBar></NavBar>
       </div>
-      <div className="flex flex-col border rounded-sm mt-1 md:h-[650px] items-center pt-10">
+      <div className="flex flex-col border dark:border-gray-500 rounded-sm mt-1 md:h-[650px] items-center pt-10">
         <h1 className="font-medium text-2xl text-center dark:text-white text-[#242D4C]">
           O Diário Alerta Mantém Você Informado!
         </h1>

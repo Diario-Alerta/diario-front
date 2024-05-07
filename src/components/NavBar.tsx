@@ -22,8 +22,8 @@ export default function NavBar() {
         </AspectRatio>
       </div>
       <div className="flex items-center gap-5  dark:text-white p-1">
-      <a href="/dashboard">LOGIN</a>
-      <a>SOBRE</a>
+      <a href="/dashboard" className="rounded-lg hover:bg-slate-100/50 p-2 ">LOGIN</a>
+      <a href="/"  className="rounded-lg hover:bg-slate-100/50 p-2">SOBRE</a>
       <ModeToggle></ModeToggle>
       </div>
     </div>

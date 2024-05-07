@@ -13,17 +13,17 @@ export default function Home() {
 
   return (
     <div className="xl:mx-96">
-      <div className="border mt-1 rounded-sm">
+      <div className="border dark:border-gray-500 mt-1 rounded-sm">
         <NavBar></NavBar>
       </div>
-      <div className="flex flex-col border rounded-sm mt-1 items-center pt-10 pb-10">
+      <div className="flex flex-col border dark:border-gray-500 rounded-sm mt-1 items-center pt-10 pb-10">
         <h1 className="md:mx-52 text-center mt-5">
           Este e o campo de pesquisa personalizada, onde pode-se colocar
           Notificações para qualquer termo ou frase desejada.
         </h1>
-        <div className="border p-1 rounded-lg flex justify-items-center flex-col mt-4 text-center w-60">
+        <div className="border dark:border-gray-500 p-1 rounded-lg flex justify-items-center flex-col mt-4 text-center w-60">
           <h1>Você pode Adicionar ou Remover campos livremente</h1>
-          <div className="flex gap-1 justify-center">
+          <div className="flex gap-1 justify-center mb-2">
             <button
               className="border p-1 mt-2 hover:bg-[#51b842] rounded text-white bg-[#0E7201]"
               onClick={() => append({})}
@@ -32,7 +32,7 @@ export default function Home() {
             </button>
             <button
               title="REMOVER"
-              className="border p-1 mt-2 hover:bg-red-950 rounded text-white bg-red-800"
+              className="border p-1 mt-2 hover:bg-[#ce4747] rounded text-white bg-[#8f3131]"
               onClick={() => remove()}
             >
               LIMPAR
@@ -59,7 +59,7 @@ export default function Home() {
                     className="w-56 border rounded-sm p-2"
                   />
                   <button
-                    className="border p-1 mt-2 h-[42px] hover:bg-red-950 text-white bg-red-800 rounded"
+                    className="border p-1 mt-2 h-[42px] hover:bg-[#ce4747] text-white bg-[#8f3131] rounded"
                     onClick={() => remove(index)}
                   >
                     -
