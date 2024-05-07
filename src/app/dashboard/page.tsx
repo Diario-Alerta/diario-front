@@ -25,14 +25,14 @@ export default function Home() {
           <h1>Você pode Adicionar ou Remover campos livremente</h1>
           <div className="flex gap-1 justify-center">
             <button
-              className="border p-1 mt-2 hover:bg-[#51b842] text-white bg-[#0E7201]"
+              className="border p-1 mt-2 hover:bg-[#51b842] rounded text-white bg-[#0E7201]"
               onClick={() => append({})}
             >
               ADICIONAR
             </button>
             <button
               title="REMOVER"
-              className="border p-1 mt-2 hover:bg-red-950 text-white bg-red-800"
+              className="border p-1 mt-2 hover:bg-red-950 rounded text-white bg-red-800"
               onClick={() => remove()}
             >
               LIMPAR
