@@ -16,7 +16,7 @@ export default function Home() {
       <div className="border mt-1 rounded-sm">
         <NavBar></NavBar>
       </div>
-      <div className="flex flex-col border rounded-sm mt-1 md:h-[650px] items-center pt-10">
+      <div className="flex flex-col border rounded-sm mt-1 items-center pt-10 pb-10">
         <h1 className="md:mx-52 text-center mt-5">
           Este e o campo de pesquisa personalizada, onde pode-se colocar
           Notificações para qualquer termo ou frase desejada.
@@ -25,16 +25,17 @@ export default function Home() {
           <h1>Você pode Adicionar ou Remover campos livremente</h1>
           <div className="flex gap-1 justify-center">
             <button
-              className="border p-1 mt-2 hover:bg-[#242D4C] text-white bg-[#0E7201]"
+              className="border p-1 mt-2 hover:bg-[#51b842] text-white bg-[#0E7201]"
               onClick={() => append({})}
             >
               ADICIONAR
             </button>
             <button
-              className="border p-1 mt-2 hover:bg-[#242D4C] text-white bg-red-800"
+              title="REMOVER"
+              className="border p-1 mt-2 hover:bg-red-950 text-white bg-red-800"
               onClick={() => remove()}
             >
-              REMOVER
+              LIMPAR
             </button>
           </div>
         </div>
@@ -45,17 +46,25 @@ export default function Home() {
               type="text"
               required
               placeholder="Termo a Ser Pesquisado"
-              className="w-42 border rounded-sm p-2"
+              className="w-60 border rounded-sm p-2"
             />
             {fields.map(({ id }, index) => {
               return (
-                <input
-                  key={id}
-                  name="termo"
-                  type="text"
-                  placeholder="Termo a Ser Pesquisado"
-                  className="w-42 border rounded-sm p-2"
-                />
+                <div>
+                  <input
+                    key={id}
+                    name="termo"
+                    type="text"
+                    placeholder="Termo adicional"
+                    className="w-56 border rounded-sm p-2"
+                  />
+                  <button
+                    className="border p-1 mt-2 h-[42px] hover:bg-red-950 text-white bg-red-800 rounded"
+                    onClick={() => remove(index)}
+                  >
+                    -
+                  </button>
+                </div>
               );
             })}
           </div>
@@ -65,20 +74,20 @@ export default function Home() {
             id="email"
             required
             placeholder="Email de Notificação"
-            className="w-42 border rounded-sm p-2"
+            className="w-60 border rounded-sm p-2"
           />
           <button
             type="submit"
-            className="border p-1 dark:text-black bg-[#FFBD59] hover:text-white hover:bg-[#0E7201]"
+            className="border p-1 dark:text-black bg-[#FFBD59] hover:bg-[#ffd28f]"
           >
             <span>Enviar dados</span>
           </button>
         </form>
         <a
           href="/"
-          className="border p-1 dark:text-black bg-[#242D4C] text-white dark:bg-white hover:text-white hover:bg-[#0E7201]"
+          className="border p-2 rounded bg-[#3d3d3d] text-white dark:text-gray-400 hover:text-white hover:bg-[#5f5f5f]"
         >
-          VOLTAR
+          SAIR
         </a>
       </div>
     </div>
