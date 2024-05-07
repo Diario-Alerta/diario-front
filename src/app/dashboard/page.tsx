@@ -20,6 +20,33 @@ export default function Home() {
             className="w-42 border rounded-sm p-2"
           />
           <input
+            name="termo2"
+            type="text"
+            id="termo2"
+            placeholder="Segundo Termo"
+            className="w-42 border rounded-sm p-2"
+          /><input
+          name="termo3"
+          type="text"
+          id="termo3"
+          placeholder="Terceiro Termo"
+          className="w-42 border rounded-sm p-2"
+        />
+        <input
+          name="termo4"
+          type="text"
+          id="termo4"
+          placeholder="Quarto Termo"
+          className="w-42 border rounded-sm p-2"
+        />
+        <input
+          name="termo5"
+          type="text"
+          id="termo5"
+          placeholder="Quinto Termo"
+          className="w-42 border rounded-sm p-2"
+        />
+          <input
             name="Email"
             type="text"
             id="email"
