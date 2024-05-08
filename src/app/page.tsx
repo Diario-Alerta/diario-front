@@ -32,34 +32,34 @@ export default function Home() {
         </div>
         <form className="flex flex-col gap-2 my-5">
           <input
-          name="Nome"
-          type="text"
-          id="nome"
-          required
-          placeholder="Nome"
-          className="w-42 border rounded-sm p-2"
+            name="Nome"
+            type="text"
+            id="nome"
+            required
+            placeholder="Nome"
+            className="w-42 border rounded-sm p-2"
           />
           <input
-          name="CPF/CNPJ"
-          type="text"
-          id="cpf"
-          required
-          placeholder="CPF/CNPJ"
-          className="w-42 border rounded-sm p-2"
+            name="CPF/CNPJ"
+            type="text"
+            id="cpf"
+            required
+            placeholder="CPF/CNPJ"
+            className="w-42 border rounded-sm p-2"
           />
           <input
-          name="Email"
-          type="text"
-          id="email"
-          required
-          placeholder="Email"
-          className="w-42 border rounded-sm p-2"
+            name="Email"
+            type="text"
+            id="email"
+            required
+            placeholder="Email"
+            className="w-42 border rounded-sm p-2"
           />
 
           <button className="border p-1 dark:text-black bg-[#FFBD59] hover:bg-[#ffd28f]">
             <span>Enviar dados</span>
           </button>
-          </form>
+        </form>
       </div>
     </div>
   );
