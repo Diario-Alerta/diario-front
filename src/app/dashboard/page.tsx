@@ -17,7 +17,10 @@ export default function Home() {
         <NavBar></NavBar>
       </div>
       <div className="flex flex-col border dark:border-gray-500 rounded-sm mt-1 items-center pt-10 pb-10">
-        <h1 className="md:mx-52 text-center mt-5">
+      <h1 className="font-medium text-2xl text-center dark:text-white text-[#242D4C]">
+          Pesquisa Avançada
+        </h1>
+        <h1 className="md:mx-52 mx-5 text-center mt-5">
           Este e o campo de pesquisa personalizada, onde pode-se colocar
           Notificações para qualquer termo ou frase desejada.
         </h1>
