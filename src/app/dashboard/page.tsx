@@ -47,15 +47,49 @@ export default function Home() {
         </div>
         <form className="flex flex-col gap-2 my-5">
           <label htmlFor="departmento">Escolha um Departamento:</label>
-          <select required name="departamento" className="w-60 border rounded-sm p-2">
+          <select
+            required
+            name="departamento"
+            className="w-60 border rounded-sm p-2"
+          >
             <option value="todos">Todos</option>
-            <option value="ministerio da agricultura">
-              Ministerio da Agricultura
+            <option value="Presidência da República">
+              Presidência da República
             </option>
-            <option value="ministerio da economia">
-              Ministerio da Economia
+            <option value="Ministério da Agricultura, Pecuária e Abastecimento">
+              Ministério da Agricultura, Pecuária e Abastecimento
             </option>
-            <option value="ministerio da fazenda">Ministerio da Fazenda</option>
+            <option value="Ministério da Cidadania">
+              Ministério da Cidadania
+            </option>
+            <option value="Ministério da Ciência, Tecnologia e Inovações">
+              Ministério da Ciência, Tecnologia e Inovações
+            </option>
+            <option value="Ministério das Comunicações">
+              Ministério das Comunicações
+            </option>
+            <option value="Ministério da Defesa">Ministério da Defesa</option>
+            <option value="Ministério do Desenvolvimento Regional">
+              Ministério do Desenvolvimento Regional
+            </option>
+            <option value="Ministério da Economia">
+              Ministério da Economia
+            </option>
+            <option value="Ministério da Educação">
+              Ministério da Educação
+            </option>
+            <option value="Ministério da Infraestrutura">
+              Ministério da Infraestrutura
+            </option>
+            <option value="Ministério da Justiça e Segurança Pública">
+              Ministério da Justiça e Segurança Pública
+            </option>
+            <option value="Ministério do Meio Ambiente">
+              Ministério do Meio Ambiente
+            </option>
+            <option value="Ministério de Minas e Energia">
+              Ministério de Minas e Energia
+            </option>
           </select>
           <Separator></Separator>
           <div className="flex flex-col gap-2">
