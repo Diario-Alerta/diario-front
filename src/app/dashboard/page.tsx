@@ -3,6 +3,9 @@ import Image from "next/image";
 import NavBar from "@/components/NavBar";
 import { AspectRatio } from "@radix-ui/react-aspect-ratio";
 import { useFieldArray, useForm } from "react-hook-form";
+import PopSucess from "@/components/PopSucess";
+import PopError from "@/components/PopError";
+import { Separator } from "@radix-ui/react-dropdown-menu";
 export default function Home() {
   const { register, handleSubmit, control } = useForm();
 
@@ -17,7 +20,7 @@ export default function Home() {
         <NavBar></NavBar>
       </div>
       <div className="flex flex-col border dark:border-gray-500 rounded-sm mt-1 items-center pt-10 pb-10">
-      <h1 className="font-medium text-2xl text-center dark:text-white text-[#242D4C]">
+        <h1 className="font-medium text-2xl text-center dark:text-white text-[#242D4C]">
           Pesquisa Avançada
         </h1>
         <h1 className="md:mx-52 mx-5 text-center mt-5">
@@ -43,6 +46,18 @@ export default function Home() {
           </div>
         </div>
         <form className="flex flex-col gap-2 my-5">
+          <label htmlFor="departmento">Escolha um Departamento:</label>
+          <select required name="departamento" className="w-60 border rounded-sm p-2">
+            <option value="todos">Todos</option>
+            <option value="ministerio da agricultura">
+              Ministerio da Agricultura
+            </option>
+            <option value="ministerio da economia">
+              Ministerio da Economia
+            </option>
+            <option value="ministerio da fazenda">Ministerio da Fazenda</option>
+          </select>
+          <Separator></Separator>
           <div className="flex flex-col gap-2">
             <input
               name="termo1"
@@ -62,7 +77,7 @@ export default function Home() {
                     className="w-56 border rounded-sm p-2"
                   />
                   <button
-                    className="border p-1 mt-2 h-[42px] hover:bg-[#ce4747] text-white bg-[#8f3131] rounded"
+                    className="border p-1 h-[42px] hover:bg-[#ce4747] text-white bg-[#8f3131] rounded"
                     onClick={() => remove(index)}
                   >
                     -
@@ -71,6 +86,7 @@ export default function Home() {
               );
             })}
           </div>
+
           <input
             name="Email"
             type="text"
@@ -92,6 +108,8 @@ export default function Home() {
         >
           SAIR
         </a>
+        <PopSucess></PopSucess>
+        <PopError></PopError>
       </div>
     </div>
   );
