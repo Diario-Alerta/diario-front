@@ -1,12 +1,16 @@
 "use client";
-import Image from "next/image";
 import NavBar from "@/components/NavBar";
-import { AspectRatio } from "@radix-ui/react-aspect-ratio";
 import { useFieldArray, useForm } from "react-hook-form";
 import PopSucess from "@/components/PopSucess";
 import PopError from "@/components/PopError";
 import { Separator } from "@radix-ui/react-dropdown-menu";
-export default function Home() {
+import { getServerSession } from "next-auth";
+import { useRouter } from "next/navigation";
+import { LogOut } from "lucide-react";
+import Logout from "../logout";
+
+export default function Dashboard() {
+  const router = useRouter();
   const { register, handleSubmit, control } = useForm();
 
   const { fields, append, remove } = useFieldArray({
@@ -136,14 +140,11 @@ export default function Home() {
             <span>Enviar dados</span>
           </button>
         </form>
-        <a
-          href="/"
-          className="border p-2 rounded bg-[#3d3d3d] text-white dark:text-gray-400 hover:text-white hover:bg-[#5f5f5f]"
-        >
-          SAIR
-        </a>
-        <PopSucess></PopSucess>
-        <PopError></PopError>
+        <Logout></Logout>
+        <div className="mt-3 flex flex-col">
+          <PopSucess></PopSucess>
+          <PopError></PopError>
+        </div>
       </div>
     </div>
   );

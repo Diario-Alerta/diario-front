@@ -2,7 +2,10 @@
 import Image from "next/image";
 import NavBar from "@/components/NavBar";
 import { AspectRatio } from "@radix-ui/react-aspect-ratio";
+import { getServerSession } from "next-auth";
+import { redirect } from "next/navigation";
 export default function Home() {
+ 
   return (
     <div className="xl:mx-96">
       <div className="border dark:border-gray-500 mt-1 rounded-sm">
