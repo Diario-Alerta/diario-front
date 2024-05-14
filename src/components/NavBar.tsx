@@ -34,7 +34,7 @@ export default function NavBar() {
       </div>
       <div className="flex items-center gap-5  dark:text-white p-1">
         <a href="/dashboard" className="rounded-lg hover:bg-slate-100/50 p-2 ">
-          LOGIN
+          PESQUISA AVANCADA
         </a>
         <Drawer>
           <DrawerTrigger className="text-center rounded-lg hover:bg-slate-100/50 p-2">
