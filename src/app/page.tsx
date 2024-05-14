@@ -57,7 +57,7 @@ export default function Home() {
           />
 
           <button className="border p-1 dark:text-black bg-[#FFBD59] hover:bg-[#ffd28f]">
-            <span>Enviar dados</span>
+            <span>Enviar dados.</span>
           </button>
         </form>
       </div>
