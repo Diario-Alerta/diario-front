@@ -92,7 +92,7 @@ export default function Dashboard() {
               Ministério do Meio Ambiente
             </option>
             <option value="Ministério de Minas e Energia">
-              Ministério de Minas e Energia
+              Ministério de Minas e Energia.
             </option>
           </select>
           <Separator></Separator>
