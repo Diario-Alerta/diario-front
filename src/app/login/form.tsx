@@ -34,18 +34,18 @@ export default function Form() {
         type="username"
         required
         className="border rounded"
-        placeholder="username"
+        placeholder="Nome de Usuario"
       />
       <input
         name="password"
         type="password"
         required
         className="border rounded"
-        placeholder="senha"
+        placeholder="Sua Senha"
       />
       <button
         type="submit"
-        className="m-1 p-2 w-56 dark:text-black bg-[#FFBD59] hover:bg-[#ffd28f]"
+        className="m-1 p-2 w-56 rounded dark:text-black bg-[#FFBD59] hover:bg-[#ffd28f]"
       >
         Entrar
       </button>
