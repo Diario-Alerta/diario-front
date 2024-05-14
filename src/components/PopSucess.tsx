@@ -11,7 +11,7 @@ import {
 export default function PopSucess() {
   return (
     <Dialog>
-      <DialogTrigger>teste sucesso</DialogTrigger>
+      <DialogTrigger className="border p-1 rounded bg-[#3d3d3d] text-white dark:text-gray-400 hover:text-white hover:bg-[#5f5f5f]">teste pop up sucesso</DialogTrigger>
       <DialogContent>
         <DialogHeader className="text-green-600 flex items-center">
           <DialogTitle>Sucesso!</DialogTitle>
