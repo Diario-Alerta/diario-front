@@ -45,9 +45,9 @@ export default function Form() {
       />
       <button
         type="submit"
-        className="m-1 bg-white hover:bg-gray-200 rounded-sm p-1 dark:text-black"
+        className="m-1 p-2 w-56 dark:text-black bg-[#FFBD59] hover:bg-[#ffd28f]"
       >
-        LOGIN
+        Entrar
       </button>
     </form>
   );
