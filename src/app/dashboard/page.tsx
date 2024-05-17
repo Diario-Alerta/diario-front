@@ -92,8 +92,13 @@ export default function Dashboard() {
               Ministério do Meio Ambiente
             </option>
             <option value="Ministério de Minas e Energia">
-              Ministério de Minas e Energia.
+              Ministério de Minas e Energia
             </option>
+            <option value="Ministério das Relações Exteriores">
+              Ministério das Relações Exteriores
+            </option>
+            <option value="Ministério da Saúde">Ministério da Saúde</option>
+            <option value="Ministério do Turismo">Ministério do Turismo</option>
           </select>
           <Separator></Separator>
           <div className="flex flex-col gap-2">
