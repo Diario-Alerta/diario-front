@@ -99,6 +99,16 @@ export default function Dashboard() {
             </option>
             <option value="Ministério da Saúde">Ministério da Saúde</option>
             <option value="Ministério do Turismo">Ministério do Turismo</option>
+            <option value="Controladoria-Geral da União">
+              Controladoria-Geral da União
+            </option>
+            <option value="Ministério Público da União">
+              Ministério Público da União
+            </option>
+            <option value="Poder Judiciário">Poder Judiciário</option>
+            <option value="Governo do Estado">Governo do Estado</option>
+            <option value="Ministério da Cultura">Ministério da Cultura</option>
+            <option value="Ministério da Fazenda">Ministério da Fazenda</option>
           </select>
           <Separator></Separator>
           <div className="flex flex-col gap-2">
