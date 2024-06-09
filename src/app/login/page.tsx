@@ -1,6 +1,5 @@
 import NavBar from "@/components/NavBar";
 import Form from "./form";
-import Email from "next-auth/providers/email";
 
 export default function LoginPage() {
   return (

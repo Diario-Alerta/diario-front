@@ -4,9 +4,7 @@ import { useFieldArray, useForm } from "react-hook-form";
 import PopSucess from "@/components/PopSucess";
 import PopError from "@/components/PopError";
 import { Separator } from "@radix-ui/react-dropdown-menu";
-import { getServerSession } from "next-auth";
 import { useRouter } from "next/navigation";
-import { LogOut } from "lucide-react";
 import Logout from "../logout";
 
 export default function Dashboard() {
